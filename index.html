@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Список дел</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            .todo-list-item {
+                margin-top: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="content">
+            <div class="row">
+                <div class="col">
+                    <div class="card text-white bg-secondary">
+                        <div class="card-body">
+                            <button class="btn btn-success" id="addBtn">Добавить запись</button>
+                            <button class="btn btn-info" id="showBtn">Показать список</button>
+                            <button class="btn btn-warning" id="editBtn">Редактировать запись</button>
+                            <button class="btn btn-danger" id="remBtn">Удалить запись</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+                <div class="col-6" id="todo-list">
+                    <!-- Динамический блок -->
+                    <div class="card todo-list-item">
+                        <div class="card-body">
+                            <h3>Тут пока ничего нет</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
